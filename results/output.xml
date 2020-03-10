@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200228 13:52:56.926" generator="Robot 3.1.2 (Python 2.7.15+ on linux2)">
+<suite source="/home/tathilla/Downloads/tathila_project/tests/cucumber/features" id="s1" name="Features">
+<suite source="/home/tathilla/Downloads/tathila_project/tests/cucumber/features/Login.robot" id="s1-s1" name="Login">
+<test id="s1-s1-t1" name="Scenario: Login successfully for an user">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200228 13:52:57.042" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200228 13:53:01.823" starttime="20200228 13:52:57.042"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200228 13:53:01.932" starttime="20200228 13:53:01.824"></status>
+</kw>
+<status status="PASS" endtime="20200228 13:53:01.933" starttime="20200228 13:52:57.041"></status>
+</kw>
+<kw name="Given that I am on the page login" library="LoginSteps">
+<kw name="Verify the login page is loaded" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>40</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200228 13:53:24.031" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<status status="FAIL" endtime="20200228 13:53:24.031" starttime="20200228 13:53:24.027"></status>
+</kw>
+<msg timestamp="20200228 13:53:24.032" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<msg timestamp="20200228 13:53:24.033" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<status status="FAIL" endtime="20200228 13:53:24.033" starttime="20200228 13:53:01.935"></status>
+</kw>
+<status status="FAIL" endtime="20200228 13:53:24.033" starttime="20200228 13:53:01.935"></status>
+</kw>
+<status status="FAIL" endtime="20200228 13:53:24.034" starttime="20200228 13:53:01.934"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200228 13:53:24.052" starttime="20200228 13:53:24.035"></status>
+</kw>
+<status status="PASS" endtime="20200228 13:53:24.052" starttime="20200228 13:53:24.034"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="FAIL" endtime="20200228 13:53:24.052" critical="yes" starttime="20200228 13:52:57.040">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</status>
+</test>
+<test id="s1-s1-t2" name="Scenario: Validate login with inexistent email">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200228 13:53:24.057" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200228 13:53:36.046" starttime="20200228 13:53:24.056"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200228 13:53:36.156" starttime="20200228 13:53:36.047"></status>
+</kw>
+<status status="PASS" endtime="20200228 13:53:36.157" starttime="20200228 13:53:24.055"></status>
+</kw>
+<kw name="Given that I am on the page login" library="LoginSteps">
+<kw name="Verify the login page is loaded" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>40</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200228 13:53:43.658" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<status status="FAIL" endtime="20200228 13:53:43.658" starttime="20200228 13:53:43.654"></status>
+</kw>
+<msg timestamp="20200228 13:53:43.658" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<msg timestamp="20200228 13:53:43.658" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<status status="FAIL" endtime="20200228 13:53:43.659" starttime="20200228 13:53:36.160"></status>
+</kw>
+<status status="FAIL" endtime="20200228 13:53:43.659" starttime="20200228 13:53:36.159"></status>
+</kw>
+<status status="FAIL" endtime="20200228 13:53:43.659" starttime="20200228 13:53:36.158"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200228 13:53:43.667" starttime="20200228 13:53:43.660"></status>
+</kw>
+<status status="PASS" endtime="20200228 13:53:43.667" starttime="20200228 13:53:43.660"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="FAIL" endtime="20200228 13:53:43.667" critical="yes" starttime="20200228 13:53:24.054">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</status>
+</test>
+<test id="s1-s1-t3" name="Scenario: Validate login with incorrect password">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200228 13:53:43.669" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200228 13:54:05.958" starttime="20200228 13:53:43.669"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200228 13:54:06.069" starttime="20200228 13:54:05.958"></status>
+</kw>
+<status status="PASS" endtime="20200228 13:54:06.070" starttime="20200228 13:53:43.668"></status>
+</kw>
+<kw name="Given that I am on the page login" library="LoginSteps">
+<kw name="Verify the login page is loaded" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>40</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200228 13:54:46.416" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200228 13:54:46.417" starttime="20200228 13:54:46.232"></status>
+</kw>
+<msg timestamp="20200228 13:54:46.417" level="FAIL">Element 'xpath://div[@class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"]//div[@class="makeStyles-loginLabel-15"]' not visible after 40 seconds.</msg>
+<status status="FAIL" endtime="20200228 13:54:46.417" starttime="20200228 13:54:06.074"></status>
+</kw>
+<status status="FAIL" endtime="20200228 13:54:46.417" starttime="20200228 13:54:06.073"></status>
+</kw>
+<status status="FAIL" endtime="20200228 13:54:46.417" starttime="20200228 13:54:06.072"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200228 13:54:46.475" starttime="20200228 13:54:46.418"></status>
+</kw>
+<status status="PASS" endtime="20200228 13:54:46.475" starttime="20200228 13:54:46.417"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="FAIL" endtime="20200228 13:54:46.475" critical="yes" starttime="20200228 13:53:43.668">Element 'xpath://div[@class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"]//div[@class="makeStyles-loginLabel-15"]' not visible after 40 seconds.</status>
+</test>
+<test id="s1-s1-t4" name="Scenario: Validate login with empty email">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200228 13:54:46.478" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200228 13:54:52.186" starttime="20200228 13:54:46.477"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200228 13:54:52.203" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<status status="FAIL" endtime="20200228 13:54:52.203" starttime="20200228 13:54:52.200"></status>
+</kw>
+<msg timestamp="20200228 13:54:52.203" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<msg timestamp="20200228 13:54:52.204" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<status status="FAIL" endtime="20200228 13:54:52.204" starttime="20200228 13:54:52.188"></status>
+</kw>
+<status status="FAIL" endtime="20200228 13:54:52.204" starttime="20200228 13:54:46.476"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200228 13:54:52.263" starttime="20200228 13:54:52.206"></status>
+</kw>
+<status status="PASS" endtime="20200228 13:54:52.263" starttime="20200228 13:54:52.205"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="FAIL" endtime="20200228 13:54:52.263" critical="yes" starttime="20200228 13:54:46.476">Setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</status>
+</test>
+<test id="s1-s1-t5" name="Scenario: Validate login with empty password">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200228 13:54:52.266" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200228 13:54:56.220" starttime="20200228 13:54:52.266"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200228 13:54:56.228" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<status status="FAIL" endtime="20200228 13:54:56.228" starttime="20200228 13:54:56.224"></status>
+</kw>
+<msg timestamp="20200228 13:54:56.228" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<msg timestamp="20200228 13:54:56.229" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<status status="FAIL" endtime="20200228 13:54:56.229" starttime="20200228 13:54:56.221"></status>
+</kw>
+<status status="FAIL" endtime="20200228 13:54:56.229" starttime="20200228 13:54:52.265"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200228 13:54:56.286" starttime="20200228 13:54:56.230"></status>
+</kw>
+<status status="PASS" endtime="20200228 13:54:56.287" starttime="20200228 13:54:56.229"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="FAIL" endtime="20200228 13:54:56.287" critical="yes" starttime="20200228 13:54:52.264">Setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</status>
+</test>
+<doc>This is a basic login test</doc>
+<status status="FAIL" endtime="20200228 13:54:56.288" starttime="20200228 13:52:56.943"></status>
+</suite>
+<status status="FAIL" endtime="20200228 13:54:56.291" starttime="20200228 13:52:56.927"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="5" pass="0">Critical Tests</stat>
+<stat fail="5" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="5" pass="0">Regression</stat>
+</tag>
+<suite>
+<stat fail="5" id="s1" name="Features" pass="0">Features</stat>
+<stat fail="5" id="s1-s1" name="Login" pass="0">Features.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200228 13:53:24.032" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<msg timestamp="20200228 13:53:43.658" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<msg timestamp="20200228 13:54:52.203" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.87)
+</msg>
+<msg timestamp="20200228 13:54:56.228" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.87)
+</msg>
+</errors>
+</robot>

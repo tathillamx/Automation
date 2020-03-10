@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200107 14:55:33.112" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/matheusroquedeoliveirasilva/Documents/Workspace/b2b-robot-automation/robot/web_end_to_end/tests/cucumber/e2e/Journey.robot" id="s1" name="Journey">
+<kw type="setup" name="Open browser and maximize" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200107 14:55:33.244" level="INFO">Opening browser 'chrome' to base url 'https://test-conv-micerveceria.abi-sandbox.net'.</msg>
+<status status="PASS" endtime="20200107 14:55:41.475" starttime="20200107 14:55:33.244"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200107 14:55:41.685" starttime="20200107 14:55:41.476"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser is maximized</arg>
+</arguments>
+<status status="PASS" endtime="20200107 14:55:41.685" starttime="20200107 14:55:41.685"></status>
+</kw>
+<status status="PASS" endtime="20200107 14:55:41.685" starttime="20200107 14:55:33.244"></status>
+</kw>
+<test id="s1-t1" name="Scenario: Buy a recommended product">
+<kw name="Given I am on the home screen" library="HomeSteps">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${ENV}" in ("teste")</arg>
+<arg>IntroPage${ENV}.Verify the intro title</arg>
+<arg>ELSE</arg>
+<arg>IntroPage.Verify the intro title</arg>
+</arguments>
+<kw name="Verify the intro title" library="IntroPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_logInOption}</arg>
+</arguments>
+<status status="PASS" endtime="20200107 14:55:41.718" starttime="20200107 14:55:41.688"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Intro page title verified</arg>
+</arguments>
+<status status="PASS" endtime="20200107 14:55:41.719" starttime="20200107 14:55:41.719"></status>
+</kw>
+<status status="PASS" endtime="20200107 14:55:41.719" starttime="20200107 14:55:41.688"></status>
+</kw>
+<status status="PASS" endtime="20200107 14:55:41.719" starttime="20200107 14:55:41.687"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${ENV}" in ("teste")</arg>
+<arg>IntroPage${ENV}.Click the ingress button</arg>
+<arg>ELSE</arg>
+<arg>IntroPage.Click the ingress button</arg>
+</arguments>
+<kw name="Click the ingress button" library="IntroPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_logInOption}</arg>
+</arguments>
+<status status="PASS" endtime="20200107 14:55:41.739" starttime="20200107 14:55:41.720"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_logInOption}</arg>
+</arguments>
+<msg timestamp="20200107 14:55:41.740" level="INFO">Clicking element 'xpath://*[@class="authorization-link"]'.</msg>
+<status status="PASS" endtime="20200107 14:55:43.185" starttime="20200107 14:55:41.739"></status>
+</kw>
+<status status="PASS" endtime="20200107 14:55:43.185" starttime="20200107 14:55:41.720"></status>
+</kw>
+<status status="PASS" endtime="20200107 14:55:43.185" starttime="20200107 14:55:41.719"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${ENV}" in ("DR")</arg>
+<arg>LoginPage${ENV}.Insert email</arg>
+<arg>ELSE</arg>
+<arg>LoginPage.Insert email</arg>
+</arguments>
+<kw name="Insert email" library="LoginPageDR">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField_New} 20</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200107 14:55:48.747" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200107 14:55:48.747" starttime="20200107 14:55:48.257"></status>
+</kw>
+<msg timestamp="20200107 14:55:48.749" level="FAIL">Element 'username 20' not visible after 5 seconds.</msg>
+<status status="FAIL" endtime="20200107 14:55:48.749" starttime="20200107 14:55:43.186"></status>
+</kw>
+<status status="FAIL" endtime="20200107 14:55:48.749" starttime="20200107 14:55:43.186"></status>
+</kw>
+<status status="FAIL" endtime="20200107 14:55:48.749" starttime="20200107 14:55:43.186"></status>
+</kw>
+<status status="FAIL" endtime="20200107 14:55:48.749" starttime="20200107 14:55:41.686"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200107 14:55:48.849" starttime="20200107 14:55:48.750"></status>
+</kw>
+<status status="PASS" endtime="20200107 14:55:48.849" starttime="20200107 14:55:48.749"></status>
+</kw>
+<tags>
+<tag>ar, cl</tag>
+<tag>journey</tag>
+</tags>
+<status status="FAIL" endtime="20200107 14:55:48.849" critical="yes" starttime="20200107 14:55:41.685">Element 'username 20' not visible after 5 seconds.</status>
+</test>
+<doc>This is a basic login test</doc>
+<status status="FAIL" endtime="20200107 14:55:48.850" starttime="20200107 14:55:33.114"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">ar, cl</stat>
+<stat fail="1" pass="0">journey</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Journey" pass="0">Journey</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200107 14:55:33.218" level="ERROR">Error in file '/Users/matheusroquedeoliveirasilva/Documents/Workspace/b2b-robot-automation/robot/web_end_to_end/tests/cucumber/steps/IntroSteps.robot': Variable file '../../../support/Data.py' does not exist.</msg>
+<msg timestamp="20200107 14:55:33.220" level="ERROR">Error in file '/Users/matheusroquedeoliveirasilva/Documents/Workspace/b2b-robot-automation/robot/web_end_to_end/tests/cucumber/steps/IntroSteps.robot': Resource file '../../../keywords/IntroPages/IntroPageDR.robot' does not exist.</msg>
+<msg timestamp="20200107 14:55:33.223" level="ERROR">Error in file '/Users/matheusroquedeoliveirasilva/Documents/Workspace/b2b-robot-automation/robot/web_end_to_end/tests/cucumber/steps/LoginSteps.robot': Variable file '../../../support/Data.py' does not exist.</msg>
+<msg timestamp="20200107 14:55:33.225" level="ERROR">Error in file '/Users/matheusroquedeoliveirasilva/Documents/Workspace/b2b-robot-automation/robot/web_end_to_end/keywords/LoginPages/LoginPageDR.robot': Variable file '../../../data/DR/DRStaticData.py' does not exist.</msg>
+<msg timestamp="20200107 14:55:33.227" level="ERROR">Error in file '/Users/matheusroquedeoliveirasilva/Documents/Workspace/b2b-robot-automation/robot/web_end_to_end/keywords/LoginPages/LoginPage.robot': Variable file '../../../data/DR/DRStaticData.py' does not exist.</msg>
+<msg timestamp="20200107 14:55:33.232" level="ERROR">Error in file '/Users/matheusroquedeoliveirasilva/Documents/Workspace/b2b-robot-automation/robot/web_end_to_end/keywords/HomePages/HomePage.robot': Variable file '../../DR/DRStaticData.py' does not exist.</msg>
+<msg timestamp="20200107 14:55:33.234" level="ERROR">Error in file '/Users/matheusroquedeoliveirasilva/Documents/Workspace/b2b-robot-automation/robot/web_end_to_end/keywords/HomePages/HomePageDR.robot': Variable file '../../DR/DRStaticData.py' does not exist.</msg>
+<msg timestamp="20200107 14:55:33.243" level="ERROR">Error in file '/Users/matheusroquedeoliveirasilva/Documents/Workspace/b2b-robot-automation/robot/web_end_to_end/keywords/OrderConfirmationPages/OrderConfirmationPage.robot': Variable file '../../DR/DRStaticData.py' does not exist.</msg>
+</errors>
+</robot>
