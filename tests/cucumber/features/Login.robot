@@ -27,7 +27,7 @@ Scenario: Validate login with inexistent email
 Scenario: Validate login with invalid email format
     [Tags]                                                Block
 
-    Given that I am on the page login
+   Given that I am on the page login
     When I enter an invalid format email
     Then an error message email invalid should be display
 
