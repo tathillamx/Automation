@@ -3,10 +3,9 @@ Documentation  This keywords are related to Basic elements of the screen
 Library        SeleniumLibrary
 Library        BuiltIn
 Variables      ../../data/StaticData.py
-Variables      ../../element_mapping/HomeMapping.py
+Variables      ../../element_mapping/CartMapping.py
 
 *** Keywords ***
-
 Verify the login page is loaded
     Wait until element is visible  ${Btn_Entrar}  10
 
@@ -48,15 +47,31 @@ Click button cart
 Validate Cart
     Wait until element is visible  ${Btn_Quantity}  40
 
-Validate Cart Empty
+Click Cart Button Add
+    Wait until element is visible  ${Btn_add}  40
+    Click Element  ${Btn_add}
+
+Validate Cart Button
+    Wait until element is visible  ${Btn_cart_validate}  40
+
+Click Cart Button Decrease
+    Wait until element is visible  ${Btn_Decrease}  40
+    Click Element  ${Btn_Decrease}
+
+Click Checkout Button
+    Wait until element is visible  ${Btn_Check}  40
+    Click Element  ${Btn_Check}
+
+Validade Order Sumary
+    Wait until element is visible  ${Btn_Validate_Check}  40
+
+Click button delete
+    Wait until element is visible  ${Btn_Quantity}
+    Click Element  ${Btn_Quantity}
+
+Validate button delete
     Wait until element is visible  ${Btn_CartEmpty}  40
 
-Click button decrease
-    Wait until element is visible  ${Btn_Menos}  40
-    Click Element  ${Btn_Menos}
-
-Click button logout
-    Wait until element is visible  ${Btn_Sair}  40
-    Click Element  ${Btn_Sair}
-
-
+Validate Cart Empty
+    Wait until element is visible  ${Btn_CartEmpty}  40
+    Click Element  ${Btn_CartEmpty}

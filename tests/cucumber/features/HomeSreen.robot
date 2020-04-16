@@ -49,3 +49,4 @@ Scenario: Validate total value when adding products before
     And I did add products before
     When I am in the page home screen
     Then I should see the total value according to the quantity of the products that are already added
+

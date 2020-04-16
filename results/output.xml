@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200406 12:26:08.416" generator="Robot 3.1.2 (Python 2.7.15+ on linux2)">
-<suite source="/home/tathilla/Automation_Project/Project_b2c/tests/cucumber/features" id="s1" name="Features">
-<suite source="/home/tathilla/Automation_Project/Project_b2c/tests/cucumber/features/HomeSreen.robot" id="s1-s1" name="HomeSreen">
-<test id="s1-s1-t1" name="Scenario: Validate add products button">
+<robot rpa="false" generated="20200416 08:25:09.126" generator="Robot 3.1.2 (Python 2.7.15+ on linux2)">
+<suite source="/home/tathilla/Automation_Project/tests/cucumber/features" id="s1" name="Features">
+<suite source="/home/tathilla/Automation_Project/tests/cucumber/features/Cart.robot" id="s1-s1" name="Cart">
+<test id="s1-s1-t1" name="Scenario: Validate cart button">
 <kw type="setup" name="Open Web browser" library="Hooks">
 <doc>This keyword takes 1-2 arguments, the second is default</doc>
 <arguments>
@@ -15,46 +15,46 @@
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200406 12:26:08.578" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
-<status status="PASS" endtime="20200406 12:27:03.998" starttime="20200406 12:26:08.578"></status>
+<msg timestamp="20200416 08:25:09.246" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:25:14.161" starttime="20200416 08:25:09.245"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20200406 12:27:04.105" starttime="20200406 12:27:03.999"></status>
+<status status="PASS" endtime="20200416 08:25:14.277" starttime="20200416 08:25:14.162"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:27:04.105" starttime="20200406 12:26:08.577"></status>
+<status status="PASS" endtime="20200416 08:25:14.278" starttime="20200416 08:25:09.245"></status>
 </kw>
-<kw name="Given I am logged on the application" library="ScreenSteps">
-<kw name="Verify the login page is loaded" library="HomePage">
+<kw name="Given I am logged on the application" library="CartSteps">
+<kw name="Verify the login page is loaded" library="CartPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${Btn_Entrar}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:27:37.856" starttime="20200406 12:27:04.106"></status>
+<status status="PASS" endtime="20200416 08:25:14.372" starttime="20200416 08:25:14.284"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:27:37.856" starttime="20200406 12:27:04.106"></status>
+<status status="PASS" endtime="20200416 08:25:14.372" starttime="20200416 08:25:14.281"></status>
 </kw>
-<kw name="Click Entrar button" library="HomePage">
+<kw name="Click Entrar button" library="CartPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Btn_Entrar}</arg>
 </arguments>
-<msg timestamp="20200406 12:27:37.857" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
-<status status="PASS" endtime="20200406 12:27:37.986" starttime="20200406 12:27:37.856"></status>
+<msg timestamp="20200416 08:25:14.373" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:25:14.522" starttime="20200416 08:25:14.373"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:27:37.986" starttime="20200406 12:27:37.856"></status>
+<status status="PASS" endtime="20200416 08:25:14.523" starttime="20200416 08:25:14.372"></status>
 </kw>
-<kw name="Insert email" library="HomePage">
+<kw name="Insert email" library="CartPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${Txt_emailField}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:27:38.022" starttime="20200406 12:27:37.987"></status>
+<status status="PASS" endtime="20200416 08:25:14.567" starttime="20200416 08:25:14.526"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -62,27 +62,27 @@
 <arg>${Txt_emailField}</arg>
 <arg>${user}</arg>
 </arguments>
-<msg timestamp="20200406 12:27:38.022" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
-<status status="PASS" endtime="20200406 12:27:38.958" starttime="20200406 12:27:38.022"></status>
+<msg timestamp="20200416 08:25:14.568" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:25:15.079" starttime="20200416 08:25:14.567"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:27:38.958" starttime="20200406 12:27:37.987"></status>
+<status status="PASS" endtime="20200416 08:25:15.079" starttime="20200416 08:25:14.524"></status>
 </kw>
-<kw name="Insert password" library="HomePage">
+<kw name="Insert password" library="CartPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${Txt_passwordField}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:27:38.989" starttime="20200406 12:27:38.958"></status>
+<status status="PASS" endtime="20200416 08:25:15.112" starttime="20200416 08:25:15.081"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Txt_passwordField}</arg>
 </arguments>
-<msg timestamp="20200406 12:27:38.990" level="INFO">Clicking element 'input-home-02'.</msg>
-<status status="PASS" endtime="20200406 12:27:39.048" starttime="20200406 12:27:38.989"></status>
+<msg timestamp="20200416 08:25:15.113" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:15.184" starttime="20200416 08:25:15.113"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -90,64 +90,151 @@
 <arg>${Txt_passwordField}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20200406 12:27:39.048" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
-<status status="PASS" endtime="20200406 12:27:39.289" starttime="20200406 12:27:39.048"></status>
+<msg timestamp="20200416 08:25:15.185" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:15.339" starttime="20200416 08:25:15.185"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:27:39.289" starttime="20200406 12:27:38.958"></status>
+<status status="PASS" endtime="20200416 08:25:15.339" starttime="20200416 08:25:15.081"></status>
 </kw>
-<kw name="Click Entrar button second" library="HomePage">
+<kw name="Click Entrar button second" library="CartPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${Btn_EntrarSecond}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:27:39.316" starttime="20200406 12:27:39.290"></status>
+<status status="PASS" endtime="20200416 08:25:15.371" starttime="20200416 08:25:15.340"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Btn_EntrarSecond}</arg>
 </arguments>
-<msg timestamp="20200406 12:27:39.316" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
-<status status="PASS" endtime="20200406 12:27:39.372" starttime="20200406 12:27:39.316"></status>
+<msg timestamp="20200416 08:25:15.372" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:25:15.452" starttime="20200416 08:25:15.371"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:27:39.372" starttime="20200406 12:27:39.289"></status>
+<status status="PASS" endtime="20200416 08:25:15.452" starttime="20200416 08:25:15.340"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:27:39.372" starttime="20200406 12:27:04.105"></status>
+<status status="PASS" endtime="20200416 08:25:15.453" starttime="20200416 08:25:14.279"></status>
 </kw>
-<kw name="And I am in the page home screen" library="ScreenSteps">
-<kw name="Validate Home Page" library="HomePage">
+<kw name="And I have products added to the cart" library="CartSteps">
+<kw name="Validate Home Page" library="CartPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${Btn_Cart}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200406 12:27:44.665" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-91.png"&gt;&lt;img src="selenium-screenshot-91.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20200406 12:27:44.665" starttime="20200406 12:27:44.492"></status>
+<status status="PASS" endtime="20200416 08:25:16.225" starttime="20200416 08:25:15.454"></status>
 </kw>
-<msg timestamp="20200406 12:27:44.736" level="FAIL">Element 'icon-cart-indicator' not visible after 5 seconds.</msg>
-<status status="FAIL" endtime="20200406 12:27:44.737" starttime="20200406 12:27:39.373"></status>
+<status status="PASS" endtime="20200416 08:25:16.225" starttime="20200416 08:25:15.454"></status>
 </kw>
-<status status="FAIL" endtime="20200406 12:27:44.737" starttime="20200406 12:27:39.373"></status>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:16.638" starttime="20200416 08:25:16.226"></status>
 </kw>
-<status status="FAIL" endtime="20200406 12:27:44.738" starttime="20200406 12:27:39.373"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:16.639" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:16.878" starttime="20200416 08:25:16.639"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:16.878" starttime="20200416 08:25:16.226"></status>
+</kw>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:16.908" starttime="20200416 08:25:16.879"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:16.909" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:17.125" starttime="20200416 08:25:16.908"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:17.125" starttime="20200416 08:25:16.878"></status>
+</kw>
+<kw name="Click button increase2" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:17.179" starttime="20200416 08:25:17.126"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:17.179" level="INFO">Clicking element 'button-incItem-5db70cd3355bf3001705be66'.</msg>
+<status status="PASS" endtime="20200416 08:25:17.379" starttime="20200416 08:25:17.179"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:17.379" starttime="20200416 08:25:17.126"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:17.380" starttime="20200416 08:25:15.453"></status>
+</kw>
+<kw name="When I click on the cart button" library="CartSteps">
+<kw name="Click button cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:17.419" starttime="20200416 08:25:17.382"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:17.420" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:25:17.592" starttime="20200416 08:25:17.419"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:17.592" starttime="20200416 08:25:17.381"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:17.593" starttime="20200416 08:25:17.380"></status>
+</kw>
+<kw name="Then I should see the products added" library="CartSteps">
+<kw name="Validate Cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Quantity}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:17.874" starttime="20200416 08:25:17.598"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:17.875" starttime="20200416 08:25:17.595"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:17.875" starttime="20200416 08:25:17.593"></status>
 </kw>
 <kw type="teardown" name="Close browser opened" library="Hooks">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200406 12:27:44.808" starttime="20200406 12:27:44.740"></status>
+<status status="PASS" endtime="20200416 08:25:17.938" starttime="20200416 08:25:17.876"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:27:44.808" starttime="20200406 12:27:44.739"></status>
+<status status="PASS" endtime="20200416 08:25:17.938" starttime="20200416 08:25:17.875"></status>
 </kw>
 <tags>
-<tag>Home1</tag>
+<tag>Regression</tag>
 </tags>
-<status status="FAIL" endtime="20200406 12:27:44.808" critical="yes" starttime="20200406 12:26:08.577">Element 'icon-cart-indicator' not visible after 5 seconds.</status>
+<status status="PASS" endtime="20200416 08:25:17.938" critical="yes" starttime="20200416 08:25:09.244"></status>
 </test>
-<test id="s1-s1-t2" name="Scenario: Validate decrease products button">
+<test id="s1-s1-t2" name="Scenario: Validate button add products on the cart">
 <kw type="setup" name="Open Web browser" library="Hooks">
 <doc>This keyword takes 1-2 arguments, the second is default</doc>
 <arguments>
@@ -160,14 +247,1260 @@
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200406 12:27:44.812" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
-<status status="PASS" endtime="20200406 12:28:19.933" starttime="20200406 12:27:44.811"></status>
+<msg timestamp="20200416 08:25:17.942" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:25:23.543" starttime="20200416 08:25:17.941"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20200406 12:28:20.042" starttime="20200406 12:28:19.933"></status>
+<status status="PASS" endtime="20200416 08:25:23.650" starttime="20200416 08:25:23.544"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:20.042" starttime="20200406 12:27:44.810"></status>
+<status status="PASS" endtime="20200416 08:25:23.650" starttime="20200416 08:25:17.940"></status>
+</kw>
+<kw name="Given I am logged on the application" library="CartSteps">
+<kw name="Verify the login page is loaded" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:23.693" starttime="20200416 08:25:23.651"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:23.693" starttime="20200416 08:25:23.651"></status>
+</kw>
+<kw name="Click Entrar button" library="CartPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:23.694" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:25:23.837" starttime="20200416 08:25:23.694"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:23.838" starttime="20200416 08:25:23.694"></status>
+</kw>
+<kw name="Insert email" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:23.878" starttime="20200416 08:25:23.841"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:23.879" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:25:24.421" starttime="20200416 08:25:23.879"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:24.422" starttime="20200416 08:25:23.839"></status>
+</kw>
+<kw name="Insert password" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:24.457" starttime="20200416 08:25:24.422"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:24.457" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:24.532" starttime="20200416 08:25:24.457"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:24.535" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:24.693" starttime="20200416 08:25:24.534"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:24.693" starttime="20200416 08:25:24.422"></status>
+</kw>
+<kw name="Click Entrar button second" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:24.728" starttime="20200416 08:25:24.694"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:24.728" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:25:24.807" starttime="20200416 08:25:24.728"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:24.808" starttime="20200416 08:25:24.694"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:24.808" starttime="20200416 08:25:23.650"></status>
+</kw>
+<kw name="And I have products added to the cart" library="CartSteps">
+<kw name="Validate Home Page" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:25.597" starttime="20200416 08:25:24.809"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:25.597" starttime="20200416 08:25:24.808"></status>
+</kw>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:26.069" starttime="20200416 08:25:25.597"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:26.070" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:26.246" starttime="20200416 08:25:26.070"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:26.246" starttime="20200416 08:25:25.597"></status>
+</kw>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:26.281" starttime="20200416 08:25:26.246"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:26.283" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:26.471" starttime="20200416 08:25:26.282"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:26.471" starttime="20200416 08:25:26.246"></status>
+</kw>
+<kw name="Click button increase2" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:26.510" starttime="20200416 08:25:26.472"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:26.511" level="INFO">Clicking element 'button-incItem-5db70cd3355bf3001705be66'.</msg>
+<status status="PASS" endtime="20200416 08:25:26.716" starttime="20200416 08:25:26.510"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:26.716" starttime="20200416 08:25:26.471"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:26.717" starttime="20200416 08:25:24.808"></status>
+</kw>
+<kw name="And I am on the cart page" library="CartSteps">
+<kw name="Click button cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:26.755" starttime="20200416 08:25:26.722"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:26.755" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:25:26.946" starttime="20200416 08:25:26.755"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:26.947" starttime="20200416 08:25:26.721"></status>
+</kw>
+<kw name="Validate Cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Quantity}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:27.228" starttime="20200416 08:25:26.949"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:27.228" starttime="20200416 08:25:26.948"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:27.228" starttime="20200416 08:25:26.718"></status>
+</kw>
+<kw name="When I click the add button" library="CartSteps">
+<kw name="Click Cart Button Add" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_add}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:27.268" starttime="20200416 08:25:27.229"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_add}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:27.269" level="INFO">Clicking element 'xpath://div[@class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"]//button[@id="button-incItem-5e46b8a748d0ac001795940f"]'.</msg>
+<status status="PASS" endtime="20200416 08:25:27.442" starttime="20200416 08:25:27.268"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:27.443" starttime="20200416 08:25:27.229"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:27.443" starttime="20200416 08:25:27.228"></status>
+</kw>
+<kw name="Then I should see the number of products increase" library="CartSteps">
+<kw name="Validate Cart Button" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_cart_validate}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:27.511" starttime="20200416 08:25:27.445"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:27.511" starttime="20200416 08:25:27.444"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:27.512" starttime="20200416 08:25:27.443"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:25:27.573" starttime="20200416 08:25:27.513"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:27.573" starttime="20200416 08:25:27.512"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:25:27.573" critical="yes" starttime="20200416 08:25:17.939"></status>
+</test>
+<test id="s1-s1-t3" name="Scenario: Validate button decrease products on the cart">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:27.575" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:25:33.521" starttime="20200416 08:25:27.575"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:25:33.629" starttime="20200416 08:25:33.521"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:33.629" starttime="20200416 08:25:27.575"></status>
+</kw>
+<kw name="Given I am logged on the application" library="CartSteps">
+<kw name="Verify the login page is loaded" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:33.666" starttime="20200416 08:25:33.631"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:33.666" starttime="20200416 08:25:33.630"></status>
+</kw>
+<kw name="Click Entrar button" library="CartPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:33.667" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:25:33.786" starttime="20200416 08:25:33.667"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:33.786" starttime="20200416 08:25:33.666"></status>
+</kw>
+<kw name="Insert email" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:33.833" starttime="20200416 08:25:33.787"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:33.834" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:25:34.347" starttime="20200416 08:25:33.833"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:34.347" starttime="20200416 08:25:33.786"></status>
+</kw>
+<kw name="Insert password" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:34.381" starttime="20200416 08:25:34.348"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:34.381" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:34.455" starttime="20200416 08:25:34.381"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:34.458" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:34.607" starttime="20200416 08:25:34.455"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:34.607" starttime="20200416 08:25:34.347"></status>
+</kw>
+<kw name="Click Entrar button second" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:34.646" starttime="20200416 08:25:34.608"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:34.647" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:25:34.720" starttime="20200416 08:25:34.646"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:34.720" starttime="20200416 08:25:34.608"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:34.720" starttime="20200416 08:25:33.630"></status>
+</kw>
+<kw name="And I have products added to the cart" library="CartSteps">
+<kw name="Validate Home Page" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:35.623" starttime="20200416 08:25:34.721"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:35.623" starttime="20200416 08:25:34.721"></status>
+</kw>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:36.017" starttime="20200416 08:25:35.624"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:36.018" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:36.199" starttime="20200416 08:25:36.017"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:36.200" starttime="20200416 08:25:35.623"></status>
+</kw>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:36.236" starttime="20200416 08:25:36.200"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:36.237" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:36.426" starttime="20200416 08:25:36.236"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:36.427" starttime="20200416 08:25:36.200"></status>
+</kw>
+<kw name="Click button increase2" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:36.465" starttime="20200416 08:25:36.427"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:36.466" level="INFO">Clicking element 'button-incItem-5db70cd3355bf3001705be66'.</msg>
+<status status="PASS" endtime="20200416 08:25:36.666" starttime="20200416 08:25:36.465"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:36.666" starttime="20200416 08:25:36.427"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:36.666" starttime="20200416 08:25:34.721"></status>
+</kw>
+<kw name="And I am on the cart page" library="CartSteps">
+<kw name="Click button cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:36.702" starttime="20200416 08:25:36.668"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:36.702" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:25:36.881" starttime="20200416 08:25:36.702"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:36.881" starttime="20200416 08:25:36.667"></status>
+</kw>
+<kw name="Validate Cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Quantity}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:37.225" starttime="20200416 08:25:36.882"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:37.225" starttime="20200416 08:25:36.882"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:37.226" starttime="20200416 08:25:36.667"></status>
+</kw>
+<kw name="When I click the decrease cart button" library="CartSteps">
+<kw name="Click Cart Button Decrease" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Decrease}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:37.267" starttime="20200416 08:25:37.227"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Decrease}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:37.268" level="INFO">Clicking element 'xpath://div[@class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"]//button[@id="button-decItem-5e46b8a748d0ac001795940f"]'.</msg>
+<status status="PASS" endtime="20200416 08:25:37.434" starttime="20200416 08:25:37.268"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:37.434" starttime="20200416 08:25:37.227"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:37.434" starttime="20200416 08:25:37.226"></status>
+</kw>
+<kw name="Then I should see the number of products decrease" library="CartSteps">
+<kw name="Validate Cart Button" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_cart_validate}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:37.499" starttime="20200416 08:25:37.442"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:37.500" starttime="20200416 08:25:37.435"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:37.500" starttime="20200416 08:25:37.434"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:25:37.558" starttime="20200416 08:25:37.501"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:37.559" starttime="20200416 08:25:37.500"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:25:37.559" critical="yes" starttime="20200416 08:25:27.574"></status>
+</test>
+<test id="s1-s1-t4" name="Scenario: Validate the checkout button on the cart">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:37.564" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:25:43.612" starttime="20200416 08:25:37.563"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:25:43.727" starttime="20200416 08:25:43.613"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:43.727" starttime="20200416 08:25:37.563"></status>
+</kw>
+<kw name="Given I am logged on the application" library="CartSteps">
+<kw name="Verify the login page is loaded" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:43.769" starttime="20200416 08:25:43.729"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:43.769" starttime="20200416 08:25:43.728"></status>
+</kw>
+<kw name="Click Entrar button" library="CartPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:43.770" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:25:43.908" starttime="20200416 08:25:43.770"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:43.909" starttime="20200416 08:25:43.769"></status>
+</kw>
+<kw name="Insert email" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:43.946" starttime="20200416 08:25:43.910"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:43.948" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:25:44.445" starttime="20200416 08:25:43.947"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:44.445" starttime="20200416 08:25:43.909"></status>
+</kw>
+<kw name="Insert password" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:44.479" starttime="20200416 08:25:44.445"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:44.479" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:44.545" starttime="20200416 08:25:44.479"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:44.547" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:44.706" starttime="20200416 08:25:44.546"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:44.706" starttime="20200416 08:25:44.445"></status>
+</kw>
+<kw name="Click Entrar button second" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:44.740" starttime="20200416 08:25:44.707"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:44.742" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:25:44.820" starttime="20200416 08:25:44.741"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:44.820" starttime="20200416 08:25:44.706"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:44.820" starttime="20200416 08:25:43.728"></status>
+</kw>
+<kw name="And I have products added to the cart" library="CartSteps">
+<kw name="Validate Home Page" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:45.756" starttime="20200416 08:25:44.821"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:45.756" starttime="20200416 08:25:44.821"></status>
+</kw>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:46.150" starttime="20200416 08:25:45.757"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:46.151" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:46.351" starttime="20200416 08:25:46.151"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:46.351" starttime="20200416 08:25:45.756"></status>
+</kw>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:46.389" starttime="20200416 08:25:46.352"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:46.390" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:46.592" starttime="20200416 08:25:46.390"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:46.592" starttime="20200416 08:25:46.351"></status>
+</kw>
+<kw name="Click button increase2" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:46.626" starttime="20200416 08:25:46.592"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:46.627" level="INFO">Clicking element 'button-incItem-5db70cd3355bf3001705be66'.</msg>
+<status status="PASS" endtime="20200416 08:25:46.832" starttime="20200416 08:25:46.627"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:46.833" starttime="20200416 08:25:46.592"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:46.833" starttime="20200416 08:25:44.820"></status>
+</kw>
+<kw name="And I am on the cart page" library="CartSteps">
+<kw name="Click button cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:46.870" starttime="20200416 08:25:46.837"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:46.871" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:25:47.059" starttime="20200416 08:25:46.870"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:47.059" starttime="20200416 08:25:46.837"></status>
+</kw>
+<kw name="Validate Cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Quantity}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:47.368" starttime="20200416 08:25:47.060"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:47.368" starttime="20200416 08:25:47.059"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:47.368" starttime="20200416 08:25:46.834"></status>
+</kw>
+<kw name="When I click the checkout button" library="CartSteps">
+<kw name="Click Checkout Button" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Check}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:47.417" starttime="20200416 08:25:47.369"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Check}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:47.418" level="INFO">Clicking element 'label-checkout-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:47.593" starttime="20200416 08:25:47.417"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:47.594" starttime="20200416 08:25:47.369"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:47.594" starttime="20200416 08:25:47.369"></status>
+</kw>
+<kw name="Then I should see the order sumary page" library="CartSteps">
+<kw name="Validade Order Sumary" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Validate_Check}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:47.913" starttime="20200416 08:25:47.599"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:47.913" starttime="20200416 08:25:47.598"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:47.913" starttime="20200416 08:25:47.595"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:25:47.973" starttime="20200416 08:25:47.914"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:47.973" starttime="20200416 08:25:47.914"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:25:47.973" critical="yes" starttime="20200416 08:25:37.561"></status>
+</test>
+<test id="s1-s1-t5" name="Scenario: Validate delete button on the cart">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:47.975" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:25:53.530" starttime="20200416 08:25:47.975"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:25:53.640" starttime="20200416 08:25:53.531"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:53.641" starttime="20200416 08:25:47.974"></status>
+</kw>
+<kw name="Given I am logged on the application" library="CartSteps">
+<kw name="Verify the login page is loaded" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:53.764" starttime="20200416 08:25:53.646"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:53.764" starttime="20200416 08:25:53.645"></status>
+</kw>
+<kw name="Click Entrar button" library="CartPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:53.765" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:25:53.931" starttime="20200416 08:25:53.765"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:53.932" starttime="20200416 08:25:53.764"></status>
+</kw>
+<kw name="Insert email" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:53.969" starttime="20200416 08:25:53.933"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:53.970" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:25:54.487" starttime="20200416 08:25:53.969"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:54.487" starttime="20200416 08:25:53.933"></status>
+</kw>
+<kw name="Insert password" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:54.528" starttime="20200416 08:25:54.489"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:54.529" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:54.601" starttime="20200416 08:25:54.528"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:54.601" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:25:54.750" starttime="20200416 08:25:54.601"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:54.750" starttime="20200416 08:25:54.488"></status>
+</kw>
+<kw name="Click Entrar button second" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:54.785" starttime="20200416 08:25:54.751"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:54.786" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:25:54.865" starttime="20200416 08:25:54.785"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:54.865" starttime="20200416 08:25:54.750"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:54.865" starttime="20200416 08:25:53.643"></status>
+</kw>
+<kw name="And I have products added to the cart" library="CartSteps">
+<kw name="Validate Home Page" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:55.763" starttime="20200416 08:25:54.867"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:55.763" starttime="20200416 08:25:54.867"></status>
+</kw>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:56.178" starttime="20200416 08:25:55.764"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:56.179" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:56.396" starttime="20200416 08:25:56.179"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:56.396" starttime="20200416 08:25:55.764"></status>
+</kw>
+<kw name="Click button increase" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:56.464" starttime="20200416 08:25:56.396"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:56.465" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:25:56.679" starttime="20200416 08:25:56.465"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:56.679" starttime="20200416 08:25:56.396"></status>
+</kw>
+<kw name="Click button increase2" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:56.717" starttime="20200416 08:25:56.680"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:56.718" level="INFO">Clicking element 'button-incItem-5db70cd3355bf3001705be66'.</msg>
+<status status="PASS" endtime="20200416 08:25:56.925" starttime="20200416 08:25:56.717"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:56.925" starttime="20200416 08:25:56.679"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:56.925" starttime="20200416 08:25:54.865"></status>
+</kw>
+<kw name="And I am on the cart page" library="CartSteps">
+<kw name="Click button cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:56.960" starttime="20200416 08:25:56.926"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:56.961" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:25:57.182" starttime="20200416 08:25:56.960"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:57.183" starttime="20200416 08:25:56.926"></status>
+</kw>
+<kw name="Validate Cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Quantity}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:57.467" starttime="20200416 08:25:57.185"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:57.467" starttime="20200416 08:25:57.183"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:57.467" starttime="20200416 08:25:56.925"></status>
+</kw>
+<kw name="When I click the delete button" library="CartSteps">
+<kw name="Click button delete" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Quantity}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:57.488" starttime="20200416 08:25:57.468"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Quantity}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:57.489" level="INFO">Clicking element 'delete-icon'.</msg>
+<status status="PASS" endtime="20200416 08:25:57.658" starttime="20200416 08:25:57.488"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:57.659" starttime="20200416 08:25:57.467"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:57.659" starttime="20200416 08:25:57.467"></status>
+</kw>
+<kw name="Then I should see the deleted product" library="CartSteps">
+<kw name="Validate button delete" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_CartEmpty}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:25:57.731" starttime="20200416 08:25:57.661"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:57.731" starttime="20200416 08:25:57.660"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:57.731" starttime="20200416 08:25:57.659"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:25:57.791" starttime="20200416 08:25:57.732"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:25:57.792" starttime="20200416 08:25:57.731"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:25:57.792" critical="yes" starttime="20200416 08:25:47.974"></status>
+</test>
+<test id="s1-s1-t6" name="Scenario: Validate empty cart">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:25:57.794" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:26:03.851" starttime="20200416 08:25:57.794"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:26:03.958" starttime="20200416 08:26:03.852"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:03.958" starttime="20200416 08:25:57.793"></status>
+</kw>
+<kw name="Given I am logged on the application" library="CartSteps">
+<kw name="Verify the login page is loaded" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:04.001" starttime="20200416 08:26:03.960"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:04.001" starttime="20200416 08:26:03.959"></status>
+</kw>
+<kw name="Click Entrar button" library="CartPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:04.002" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:26:04.140" starttime="20200416 08:26:04.002"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:04.140" starttime="20200416 08:26:04.001"></status>
+</kw>
+<kw name="Insert email" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:04.182" starttime="20200416 08:26:04.141"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:04.183" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:26:04.719" starttime="20200416 08:26:04.183"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:04.719" starttime="20200416 08:26:04.140"></status>
+</kw>
+<kw name="Insert password" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:04.752" starttime="20200416 08:26:04.720"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:04.753" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:04.832" starttime="20200416 08:26:04.752"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:04.833" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:04.989" starttime="20200416 08:26:04.832"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:04.990" starttime="20200416 08:26:04.719"></status>
+</kw>
+<kw name="Click Entrar button second" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:05.021" starttime="20200416 08:26:04.990"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:05.021" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:26:05.099" starttime="20200416 08:26:05.021"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:05.099" starttime="20200416 08:26:04.990"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:05.100" starttime="20200416 08:26:03.959"></status>
+</kw>
+<kw name="And I have not products added to the cart" library="CartSteps">
+<kw name="Validate Home Page" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:06.034" starttime="20200416 08:26:05.101"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:06.034" starttime="20200416 08:26:05.100"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:06.034" starttime="20200416 08:26:05.100"></status>
+</kw>
+<kw name="When I click on the cart button" library="CartSteps">
+<kw name="Click button cart" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:06.060" starttime="20200416 08:26:06.035"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:06.061" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:26:06.173" starttime="20200416 08:26:06.060"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:06.174" starttime="20200416 08:26:06.035"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:06.175" starttime="20200416 08:26:06.035"></status>
+</kw>
+<kw name="Then I should see the empty cart" library="CartSteps">
+<kw name="Validate Cart Empty" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_CartEmpty}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:06.476" starttime="20200416 08:26:06.178"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_CartEmpty}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:06.477" level="INFO">Clicking element 'label-cart-totals'.</msg>
+<status status="PASS" endtime="20200416 08:26:06.637" starttime="20200416 08:26:06.476"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:06.638" starttime="20200416 08:26:06.177"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:06.638" starttime="20200416 08:26:06.177"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:26:06.698" starttime="20200416 08:26:06.638"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:06.699" starttime="20200416 08:26:06.638"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:26:06.699" critical="yes" starttime="20200416 08:25:57.792"></status>
+</test>
+<doc>This is a basic login test</doc>
+<status status="PASS" endtime="20200416 08:26:06.700" starttime="20200416 08:25:09.143"></status>
+</suite>
+<suite source="/home/tathilla/Automation_Project/tests/cucumber/features/HomeSreen.robot" id="s1-s2" name="HomeSreen">
+<test id="s1-s2-t1" name="Scenario: Validate add products button">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:06.726" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:26:12.598" starttime="20200416 08:26:06.726"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:26:12.705" starttime="20200416 08:26:12.599"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:12.705" starttime="20200416 08:26:06.725"></status>
 </kw>
 <kw name="Given I am logged on the application" library="ScreenSteps">
 <kw name="Verify the login page is loaded" library="HomePage">
@@ -177,9 +1510,9 @@
 <arg>${Btn_Entrar}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:28:20.077" starttime="20200406 12:28:20.043"></status>
+<status status="PASS" endtime="20200416 08:26:12.741" starttime="20200416 08:26:12.707"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:20.077" starttime="20200406 12:28:20.043"></status>
+<status status="PASS" endtime="20200416 08:26:12.741" starttime="20200416 08:26:12.707"></status>
 </kw>
 <kw name="Click Entrar button" library="HomePage">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -187,10 +1520,10 @@
 <arguments>
 <arg>${Btn_Entrar}</arg>
 </arguments>
-<msg timestamp="20200406 12:28:20.078" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
-<status status="PASS" endtime="20200406 12:28:20.183" starttime="20200406 12:28:20.078"></status>
+<msg timestamp="20200416 08:26:12.742" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:26:12.860" starttime="20200416 08:26:12.742"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:20.184" starttime="20200406 12:28:20.078"></status>
+<status status="PASS" endtime="20200416 08:26:12.861" starttime="20200416 08:26:12.742"></status>
 </kw>
 <kw name="Insert email" library="HomePage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -199,7 +1532,7 @@
 <arg>${Txt_emailField}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:28:20.215" starttime="20200406 12:28:20.184"></status>
+<status status="PASS" endtime="20200416 08:26:12.900" starttime="20200416 08:26:12.863"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -207,10 +1540,10 @@
 <arg>${Txt_emailField}</arg>
 <arg>${user}</arg>
 </arguments>
-<msg timestamp="20200406 12:28:20.216" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
-<status status="PASS" endtime="20200406 12:28:21.150" starttime="20200406 12:28:20.216"></status>
+<msg timestamp="20200416 08:26:12.900" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:26:13.407" starttime="20200416 08:26:12.900"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:21.150" starttime="20200406 12:28:20.184"></status>
+<status status="PASS" endtime="20200416 08:26:13.407" starttime="20200416 08:26:12.862"></status>
 </kw>
 <kw name="Insert password" library="HomePage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -219,15 +1552,15 @@
 <arg>${Txt_passwordField}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:28:21.175" starttime="20200406 12:28:21.150"></status>
+<status status="PASS" endtime="20200416 08:26:13.445" starttime="20200416 08:26:13.408"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Txt_passwordField}</arg>
 </arguments>
-<msg timestamp="20200406 12:28:21.176" level="INFO">Clicking element 'input-home-02'.</msg>
-<status status="PASS" endtime="20200406 12:28:21.228" starttime="20200406 12:28:21.176"></status>
+<msg timestamp="20200416 08:26:13.445" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:13.517" starttime="20200416 08:26:13.445"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -235,10 +1568,10 @@
 <arg>${Txt_passwordField}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20200406 12:28:21.229" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
-<status status="PASS" endtime="20200406 12:28:21.462" starttime="20200406 12:28:21.229"></status>
+<msg timestamp="20200416 08:26:13.518" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:13.668" starttime="20200416 08:26:13.517"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:21.462" starttime="20200406 12:28:21.150"></status>
+<status status="PASS" endtime="20200416 08:26:13.668" starttime="20200416 08:26:13.407"></status>
 </kw>
 <kw name="Click Entrar button second" library="HomePage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -247,19 +1580,19 @@
 <arg>${Btn_EntrarSecond}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:28:21.494" starttime="20200406 12:28:21.463"></status>
+<status status="PASS" endtime="20200416 08:26:13.713" starttime="20200416 08:26:13.669"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Btn_EntrarSecond}</arg>
 </arguments>
-<msg timestamp="20200406 12:28:21.494" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
-<status status="PASS" endtime="20200406 12:28:21.550" starttime="20200406 12:28:21.494"></status>
+<msg timestamp="20200416 08:26:13.714" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:26:13.794" starttime="20200416 08:26:13.713"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:21.550" starttime="20200406 12:28:21.463"></status>
+<status status="PASS" endtime="20200416 08:26:13.795" starttime="20200416 08:26:13.669"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:21.550" starttime="20200406 12:28:20.042"></status>
+<status status="PASS" endtime="20200416 08:26:13.795" starttime="20200416 08:26:12.706"></status>
 </kw>
 <kw name="And I am in the page home screen" library="ScreenSteps">
 <kw name="Validate Home Page" library="HomePage">
@@ -268,11 +1601,194 @@
 <arguments>
 <arg>${Btn_Cart}</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:28:22.517" starttime="20200406 12:28:21.552"></status>
+<status status="PASS" endtime="20200416 08:26:14.724" starttime="20200416 08:26:13.796"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:22.517" starttime="20200406 12:28:21.551"></status>
+<status status="PASS" endtime="20200416 08:26:14.725" starttime="20200416 08:26:13.796"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:22.517" starttime="20200406 12:28:21.551"></status>
+<status status="PASS" endtime="20200416 08:26:14.725" starttime="20200416 08:26:13.795"></status>
+</kw>
+<kw name="When I click to increase the quantity" library="ScreenSteps">
+<kw name="Click button increase" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:15.205" starttime="20200416 08:26:14.726"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:15.205" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:26:15.401" starttime="20200416 08:26:15.205"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:15.401" starttime="20200416 08:26:14.726"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:15.401" starttime="20200416 08:26:14.725"></status>
+</kw>
+<kw name="Then I should see the quantity of products" library="ScreenSteps">
+<kw name="Click button cart" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:15.445" starttime="20200416 08:26:15.402"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:15.445" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:26:15.630" starttime="20200416 08:26:15.445"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:15.630" starttime="20200416 08:26:15.402"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:15.630" starttime="20200416 08:26:15.401"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:26:15.690" starttime="20200416 08:26:15.632"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:15.690" starttime="20200416 08:26:15.631"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:26:15.690" critical="yes" starttime="20200416 08:26:06.722"></status>
+</test>
+<test id="s1-s2-t2" name="Scenario: Validate decrease products button">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:15.693" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:26:22.334" starttime="20200416 08:26:15.693"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:26:22.440" starttime="20200416 08:26:22.334"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:22.440" starttime="20200416 08:26:15.692"></status>
+</kw>
+<kw name="Given I am logged on the application" library="ScreenSteps">
+<kw name="Verify the login page is loaded" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:22.480" starttime="20200416 08:26:22.441"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:22.480" starttime="20200416 08:26:22.441"></status>
+</kw>
+<kw name="Click Entrar button" library="HomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:22.481" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:26:22.604" starttime="20200416 08:26:22.481"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:22.606" starttime="20200416 08:26:22.480"></status>
+</kw>
+<kw name="Insert email" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:22.651" starttime="20200416 08:26:22.608"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:22.652" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:26:23.155" starttime="20200416 08:26:22.651"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:23.156" starttime="20200416 08:26:22.607"></status>
+</kw>
+<kw name="Insert password" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:23.192" starttime="20200416 08:26:23.156"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:23.192" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:23.259" starttime="20200416 08:26:23.192"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:23.261" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:23.427" starttime="20200416 08:26:23.260"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:23.427" starttime="20200416 08:26:23.156"></status>
+</kw>
+<kw name="Click Entrar button second" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:23.466" starttime="20200416 08:26:23.428"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:23.467" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:26:23.539" starttime="20200416 08:26:23.466"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:23.539" starttime="20200416 08:26:23.427"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:23.539" starttime="20200416 08:26:22.440"></status>
+</kw>
+<kw name="And I am in the page home screen" library="ScreenSteps">
+<kw name="Validate Home Page" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:24.332" starttime="20200416 08:26:23.540"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:24.333" starttime="20200416 08:26:23.540"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:24.333" starttime="20200416 08:26:23.540"></status>
 </kw>
 <kw name="When I click to decrease the quantity" library="ScreenSteps">
 <kw name="Click button increase" library="HomePage">
@@ -282,17 +1798,17 @@
 <arg>${Btn_Mais}</arg>
 <arg>40</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:28:22.781" starttime="20200406 12:28:22.520"></status>
+<status status="PASS" endtime="20200416 08:26:24.795" starttime="20200416 08:26:24.334"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Btn_Mais}</arg>
 </arguments>
-<msg timestamp="20200406 12:28:22.782" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
-<status status="PASS" endtime="20200406 12:28:22.916" starttime="20200406 12:28:22.781"></status>
+<msg timestamp="20200416 08:26:24.796" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:26:25.003" starttime="20200416 08:26:24.796"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:22.916" starttime="20200406 12:28:22.519"></status>
+<status status="PASS" endtime="20200416 08:26:25.003" starttime="20200416 08:26:24.334"></status>
 </kw>
 <kw name="Click button decrease" library="HomePage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -301,62 +1817,55 @@
 <arg>${Btn_Menos}</arg>
 <arg>40</arg>
 </arguments>
-<status status="PASS" endtime="20200406 12:28:22.959" starttime="20200406 12:28:22.917"></status>
+<status status="PASS" endtime="20200416 08:26:25.041" starttime="20200416 08:26:25.003"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Btn_Menos}</arg>
 </arguments>
-<msg timestamp="20200406 12:28:22.959" level="INFO">Clicking element 'button-decItem-5e46b8a748d0ac001795940f'.</msg>
-<status status="PASS" endtime="20200406 12:28:23.122" starttime="20200406 12:28:22.959"></status>
+<msg timestamp="20200416 08:26:25.042" level="INFO">Clicking element 'button-decItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:26:25.270" starttime="20200416 08:26:25.041"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:23.122" starttime="20200406 12:28:22.916"></status>
+<status status="PASS" endtime="20200416 08:26:25.270" starttime="20200416 08:26:25.003"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:23.123" starttime="20200406 12:28:22.518"></status>
+<status status="PASS" endtime="20200416 08:26:25.270" starttime="20200416 08:26:24.333"></status>
 </kw>
 <kw name="Then I should see the quantity of products" library="ScreenSteps">
-<kw name="Validade Cart" library="HomePage">
+<kw name="Click button cart" library="HomePage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${Btn_Quantity}</arg>
+<arg>${Btn_Cart}</arg>
 <arg>40</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200406 12:28:43.037" level="FAIL">WebDriverException: Message: chrome not reachable
-  (Session info: chrome=80.0.3987.87)
-</msg>
-<status status="FAIL" endtime="20200406 12:28:43.037" starttime="20200406 12:28:43.031"></status>
+<status status="PASS" endtime="20200416 08:26:25.300" starttime="20200416 08:26:25.271"></status>
 </kw>
-<msg timestamp="20200406 12:28:43.038" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
-  (Session info: chrome=80.0.3987.87)
-</msg>
-<msg timestamp="20200406 12:28:43.039" level="FAIL">WebDriverException: Message: chrome not reachable
-  (Session info: chrome=80.0.3987.87)
-</msg>
-<status status="FAIL" endtime="20200406 12:28:43.040" starttime="20200406 12:28:23.124"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:25.301" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:26:25.451" starttime="20200416 08:26:25.301"></status>
 </kw>
-<status status="FAIL" endtime="20200406 12:28:43.041" starttime="20200406 12:28:23.123"></status>
+<status status="PASS" endtime="20200416 08:26:25.451" starttime="20200416 08:26:25.271"></status>
 </kw>
-<status status="FAIL" endtime="20200406 12:28:43.041" starttime="20200406 12:28:23.123"></status>
+<status status="PASS" endtime="20200416 08:26:25.451" starttime="20200416 08:26:25.270"></status>
 </kw>
 <kw type="teardown" name="Close browser opened" library="Hooks">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200406 12:28:43.050" starttime="20200406 12:28:43.042"></status>
+<status status="PASS" endtime="20200416 08:26:25.514" starttime="20200416 08:26:25.452"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:43.051" starttime="20200406 12:28:43.042"></status>
+<status status="PASS" endtime="20200416 08:26:25.514" starttime="20200416 08:26:25.451"></status>
 </kw>
 <tags>
-<tag>Home1</tag>
+<tag>Regression</tag>
 </tags>
-<status status="FAIL" endtime="20200406 12:28:43.051" critical="yes" starttime="20200406 12:27:44.809">WebDriverException: Message: chrome not reachable
-  (Session info: chrome=80.0.3987.87)
-</status>
+<status status="PASS" endtime="20200416 08:26:25.514" critical="yes" starttime="20200416 08:26:15.691"></status>
 </test>
-<test id="s1-s1-t3" name="Scenario: Validate cart button on the home screen">
+<test id="s1-s2-t3" name="Scenario: Validate cart button on the home screen">
 <kw type="setup" name="Open Web browser" library="Hooks">
 <doc>This keyword takes 1-2 arguments, the second is default</doc>
 <arguments>
@@ -369,73 +1878,1471 @@
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200406 12:28:43.054" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="FAIL" endtime="20200406 12:28:50.186" starttime="20200406 12:28:50.184"></status>
+<msg timestamp="20200416 08:26:25.520" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:26:32.428" starttime="20200416 08:26:25.519"></status>
 </kw>
-<msg timestamp="20200406 12:28:50.186" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
-<status status="FAIL" endtime="20200406 12:28:50.187" starttime="20200406 12:28:43.053"></status>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:26:32.536" starttime="20200416 08:26:32.429"></status>
 </kw>
-<status status="FAIL" endtime="20200406 12:28:50.188" starttime="20200406 12:28:43.053"></status>
+<status status="PASS" endtime="20200416 08:26:32.536" starttime="20200416 08:26:25.515"></status>
+</kw>
+<kw name="Given I am logged on the application" library="ScreenSteps">
+<kw name="Verify the login page is loaded" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:32.577" starttime="20200416 08:26:32.538"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:32.577" starttime="20200416 08:26:32.538"></status>
+</kw>
+<kw name="Click Entrar button" library="HomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:32.578" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:26:32.723" starttime="20200416 08:26:32.578"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:32.723" starttime="20200416 08:26:32.577"></status>
+</kw>
+<kw name="Insert email" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:32.764" starttime="20200416 08:26:32.724"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:32.764" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:26:33.292" starttime="20200416 08:26:32.764"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:33.292" starttime="20200416 08:26:32.724"></status>
+</kw>
+<kw name="Insert password" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:33.324" starttime="20200416 08:26:33.293"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:33.325" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:33.399" starttime="20200416 08:26:33.324"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:33.400" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:33.554" starttime="20200416 08:26:33.399"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:33.554" starttime="20200416 08:26:33.292"></status>
+</kw>
+<kw name="Click Entrar button second" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:33.588" starttime="20200416 08:26:33.555"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:33.589" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:26:33.673" starttime="20200416 08:26:33.589"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:33.673" starttime="20200416 08:26:33.554"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:33.673" starttime="20200416 08:26:32.537"></status>
+</kw>
+<kw name="And I am in the page home screen" library="ScreenSteps">
+<kw name="Validate Home Page" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:34.460" starttime="20200416 08:26:33.675"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:34.460" starttime="20200416 08:26:33.675"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:34.460" starttime="20200416 08:26:33.674"></status>
+</kw>
+<kw name="When I click on the cart button" library="ScreenSteps">
+<kw name="Click button increase" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:34.970" starttime="20200416 08:26:34.461"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:34.971" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:26:35.255" starttime="20200416 08:26:34.970"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:35.256" starttime="20200416 08:26:34.461"></status>
+</kw>
+<kw name="Click button cart" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:35.305" starttime="20200416 08:26:35.257"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:35.305" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:26:35.514" starttime="20200416 08:26:35.305"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:35.515" starttime="20200416 08:26:35.256"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:35.516" starttime="20200416 08:26:34.461"></status>
+</kw>
+<kw name="Then I should see the cart page" library="ScreenSteps">
+<kw name="Validate Cart" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Quantity}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:35.840" starttime="20200416 08:26:35.521"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:35.840" starttime="20200416 08:26:35.519"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:35.840" starttime="20200416 08:26:35.516"></status>
 </kw>
 <kw type="teardown" name="Close browser opened" library="Hooks">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<msg timestamp="20200406 12:28:50.195" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbd869ebdd0&gt;: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/89c20aea08e2d54d11d507624341d3fd</msg>
-<msg timestamp="20200406 12:28:50.198" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbd869ef410&gt;: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/89c20aea08e2d54d11d507624341d3fd</msg>
-<msg timestamp="20200406 12:28:50.201" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbd869a47d0&gt;: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/89c20aea08e2d54d11d507624341d3fd</msg>
-<status status="PASS" endtime="20200406 12:28:50.205" starttime="20200406 12:28:50.192"></status>
+<status status="PASS" endtime="20200416 08:26:35.904" starttime="20200416 08:26:35.841"></status>
 </kw>
-<status status="PASS" endtime="20200406 12:28:50.206" starttime="20200406 12:28:50.189"></status>
+<status status="PASS" endtime="20200416 08:26:35.904" starttime="20200416 08:26:35.841"></status>
 </kw>
 <tags>
-<tag>Home1</tag>
+<tag>Regression</tag>
 </tags>
-<status status="FAIL" endtime="20200406 12:28:50.206" critical="yes" starttime="20200406 12:28:43.052">Setup failed:
-Execution terminated by signal</status>
+<status status="PASS" endtime="20200416 08:26:35.904" critical="yes" starttime="20200416 08:26:25.514"></status>
 </test>
-<test id="s1-s1-t4" name="Scenario: Validate total value without adding products before">
+<test id="s1-s2-t4" name="Scenario: Validate total value without adding products before">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:35.908" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:26:41.785" starttime="20200416 08:26:35.908"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:26:41.891" starttime="20200416 08:26:41.785"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:41.891" starttime="20200416 08:26:35.907"></status>
+</kw>
+<kw name="Given that I logged into the app the first time" library="ScreenSteps">
+<kw name="Verify the login page is loaded" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:41.926" starttime="20200416 08:26:41.892"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:41.926" starttime="20200416 08:26:41.892"></status>
+</kw>
+<kw name="Click Entrar button" library="HomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:41.928" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:26:42.047" starttime="20200416 08:26:41.927"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:42.047" starttime="20200416 08:26:41.927"></status>
+</kw>
+<kw name="Insert email" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:42.088" starttime="20200416 08:26:42.051"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:42.088" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:26:42.614" starttime="20200416 08:26:42.088"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:42.614" starttime="20200416 08:26:42.048"></status>
+</kw>
+<kw name="Insert password" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:42.647" starttime="20200416 08:26:42.615"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:42.648" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:42.721" starttime="20200416 08:26:42.648"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:42.723" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:42.872" starttime="20200416 08:26:42.721"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:42.873" starttime="20200416 08:26:42.614"></status>
+</kw>
+<kw name="Click Entrar button second" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:42.914" starttime="20200416 08:26:42.873"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:42.914" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:26:42.987" starttime="20200416 08:26:42.914"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:42.987" starttime="20200416 08:26:42.873"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:42.987" starttime="20200416 08:26:41.892"></status>
+</kw>
+<kw name="And I didn't add products" library="ScreenSteps">
+<kw name="Validate Home Page" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:43.918" starttime="20200416 08:26:42.988"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:43.918" starttime="20200416 08:26:42.988"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:43.918" starttime="20200416 08:26:42.987"></status>
+</kw>
+<kw name="When I am in the page home screen" library="ScreenSteps">
+<kw name="Validate Home Page" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:43.952" starttime="20200416 08:26:43.919"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:43.952" starttime="20200416 08:26:43.919"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:43.952" starttime="20200416 08:26:43.919"></status>
+</kw>
+<kw name="Then I should see total value to equal zero" library="ScreenSteps">
+<kw name="Click button cart" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:44.305" starttime="20200416 08:26:43.953"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:44.305" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:26:44.400" starttime="20200416 08:26:44.305"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:44.401" starttime="20200416 08:26:43.953"></status>
+</kw>
+<kw name="Validate Cart Empty" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_CartEmpty}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:44.678" starttime="20200416 08:26:44.401"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:44.678" starttime="20200416 08:26:44.401"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:44.678" starttime="20200416 08:26:43.953"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:26:44.738" starttime="20200416 08:26:44.679"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:44.738" starttime="20200416 08:26:44.678"></status>
+</kw>
 <tags>
-<tag>Home1</tag>
-<tag>robot:exit</tag>
+<tag>Regression</tag>
 </tags>
-<status status="FAIL" endtime="20200406 12:28:50.212" critical="yes" starttime="20200406 12:28:50.209">Test execution stopped due to a fatal error.</status>
+<status status="PASS" endtime="20200416 08:26:44.738" critical="yes" starttime="20200416 08:26:35.905"></status>
 </test>
-<test id="s1-s1-t5" name="Scenario: Validate total value when adding products before">
+<test id="s1-s2-t5" name="Scenario: Validate total value when adding products before">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:44.743" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:26:49.931" starttime="20200416 08:26:44.742"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:26:50.042" starttime="20200416 08:26:49.932"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:50.042" starttime="20200416 08:26:44.740"></status>
+</kw>
+<kw name="Given I am logged on the application" library="ScreenSteps">
+<kw name="Verify the login page is loaded" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:50.078" starttime="20200416 08:26:50.043"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:50.078" starttime="20200416 08:26:50.043"></status>
+</kw>
+<kw name="Click Entrar button" library="HomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:50.079" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:26:50.207" starttime="20200416 08:26:50.078"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:50.209" starttime="20200416 08:26:50.078"></status>
+</kw>
+<kw name="Insert email" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:50.249" starttime="20200416 08:26:50.211"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:50.250" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:26:50.761" starttime="20200416 08:26:50.250"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:50.761" starttime="20200416 08:26:50.210"></status>
+</kw>
+<kw name="Insert password" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:50.796" starttime="20200416 08:26:50.762"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:50.797" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:50.868" starttime="20200416 08:26:50.797"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:50.870" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:51.032" starttime="20200416 08:26:50.869"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:51.033" starttime="20200416 08:26:50.761"></status>
+</kw>
+<kw name="Click Entrar button second" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:51.072" starttime="20200416 08:26:51.036"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:51.073" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:26:51.158" starttime="20200416 08:26:51.073"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:51.158" starttime="20200416 08:26:51.033"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:51.158" starttime="20200416 08:26:50.042"></status>
+</kw>
+<kw name="And I did add products before" library="ScreenSteps">
+<kw name="Validate Home Page" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:52.069" starttime="20200416 08:26:51.159"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:52.069" starttime="20200416 08:26:51.159"></status>
+</kw>
+<kw name="Click button increase" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:52.505" starttime="20200416 08:26:52.070"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:52.505" level="INFO">Clicking element 'button-incItem-5e46b8a748d0ac001795940f'.</msg>
+<status status="PASS" endtime="20200416 08:26:52.661" starttime="20200416 08:26:52.505"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:52.661" starttime="20200416 08:26:52.070"></status>
+</kw>
+<kw name="Click button logout" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Sair}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:52.723" starttime="20200416 08:26:52.661"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Sair}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:52.724" level="INFO">Clicking element 'link-logout'.</msg>
+<status status="PASS" endtime="20200416 08:26:53.817" starttime="20200416 08:26:52.723"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:53.817" starttime="20200416 08:26:52.661"></status>
+</kw>
+<kw name="Verify the login page is loaded" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:53.859" starttime="20200416 08:26:53.818"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:53.860" starttime="20200416 08:26:53.818"></status>
+</kw>
+<kw name="Click Entrar button" library="HomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:53.861" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:26:54.041" starttime="20200416 08:26:53.860"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:54.041" starttime="20200416 08:26:53.860"></status>
+</kw>
+<kw name="Insert email" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:54.084" starttime="20200416 08:26:54.042"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:54.085" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:26:54.584" starttime="20200416 08:26:54.084"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:54.584" starttime="20200416 08:26:54.041"></status>
+</kw>
+<kw name="Insert password" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:54.610" starttime="20200416 08:26:54.585"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:54.612" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:54.689" starttime="20200416 08:26:54.611"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:54.691" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:26:54.847" starttime="20200416 08:26:54.690"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:54.847" starttime="20200416 08:26:54.584"></status>
+</kw>
+<kw name="Click Entrar button second" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:54.881" starttime="20200416 08:26:54.849"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:54.882" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:26:54.959" starttime="20200416 08:26:54.881"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:54.959" starttime="20200416 08:26:54.848"></status>
+</kw>
+<kw name="Validate Home Page" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:55.328" starttime="20200416 08:26:54.959"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:55.329" starttime="20200416 08:26:54.959"></status>
+</kw>
+<kw name="Click button increase2" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:55.939" starttime="20200416 08:26:55.331"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:55.940" level="INFO">Clicking element 'button-incItem-5db70cd3355bf3001705be66'.</msg>
+<status status="PASS" endtime="20200416 08:26:56.125" starttime="20200416 08:26:55.940"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:56.125" starttime="20200416 08:26:55.329"></status>
+</kw>
+<kw name="Click button increase2" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:56.152" starttime="20200416 08:26:56.126"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Mais2}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:56.153" level="INFO">Clicking element 'button-incItem-5db70cd3355bf3001705be66'.</msg>
+<status status="PASS" endtime="20200416 08:26:56.328" starttime="20200416 08:26:56.152"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:56.328" starttime="20200416 08:26:56.125"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:56.328" starttime="20200416 08:26:51.158"></status>
+</kw>
+<kw name="When I am in the page home screen" library="ScreenSteps">
+<kw name="Validate Home Page" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:56.368" starttime="20200416 08:26:56.330"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:56.368" starttime="20200416 08:26:56.329"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:56.368" starttime="20200416 08:26:56.329"></status>
+</kw>
+<kw name="Then I should see the total value according to the quantity of the products that are already added" library="ScreenSteps">
+<kw name="Click button cart" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:56.407" starttime="20200416 08:26:56.369"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:56.408" level="INFO">Clicking element 'icon-cart-indicator'.</msg>
+<status status="PASS" endtime="20200416 08:26:56.577" starttime="20200416 08:26:56.408"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:56.578" starttime="20200416 08:26:56.369"></status>
+</kw>
+<kw name="Validate Cart" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Quantity}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:26:56.851" starttime="20200416 08:26:56.578"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:56.851" starttime="20200416 08:26:56.578"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:56.851" starttime="20200416 08:26:56.369"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:26:56.916" starttime="20200416 08:26:56.852"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:26:56.916" starttime="20200416 08:26:56.851"></status>
+</kw>
 <tags>
-<tag>Home1</tag>
-<tag>robot:exit</tag>
+<tag>Regression</tag>
 </tags>
-<status status="FAIL" endtime="20200406 12:28:50.215" critical="yes" starttime="20200406 12:28:50.213">Test execution stopped due to a fatal error.</status>
+<status status="PASS" endtime="20200416 08:26:56.916" critical="yes" starttime="20200416 08:26:44.739"></status>
 </test>
 <doc>This is a basic login test</doc>
-<status status="FAIL" endtime="20200406 12:28:50.218" starttime="20200406 12:26:08.438"></status>
+<status status="PASS" endtime="20200416 08:26:56.917" starttime="20200416 08:26:06.706"></status>
 </suite>
-<status status="FAIL" endtime="20200406 12:28:50.225" starttime="20200406 12:26:08.417"></status>
+<suite source="/home/tathilla/Automation_Project/tests/cucumber/features/Login.robot" id="s1-s3" name="Login">
+<test id="s1-s3-t1" name="Scenario: Login successfully for an user">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:26:56.954" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:27:04.204" starttime="20200416 08:26:56.953"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:27:04.312" starttime="20200416 08:27:04.205"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:04.312" starttime="20200416 08:26:56.950"></status>
+</kw>
+<kw name="Given that I am on the page login" library="LoginSteps">
+<kw name="Verify the login page is loaded" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:04.355" starttime="20200416 08:27:04.314"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:04.355" starttime="20200416 08:27:04.313"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:04.355" starttime="20200416 08:27:04.313"></status>
+</kw>
+<kw name="When I input my login credentials" library="LoginSteps">
+<kw name="Click Entrar button" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:04.357" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:27:04.477" starttime="20200416 08:27:04.356"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:04.478" starttime="20200416 08:27:04.356"></status>
+</kw>
+<kw name="Insert email" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:04.515" starttime="20200416 08:27:04.480"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:04.516" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:27:05.026" starttime="20200416 08:27:04.515"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:05.026" starttime="20200416 08:27:04.479"></status>
+</kw>
+<kw name="Insert password" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:05.062" starttime="20200416 08:27:05.027"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:05.063" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:05.135" starttime="20200416 08:27:05.062"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:05.135" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:05.284" starttime="20200416 08:27:05.135"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:05.284" starttime="20200416 08:27:05.026"></status>
+</kw>
+<kw name="Click Entrar button second" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:05.323" starttime="20200416 08:27:05.285"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:05.324" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:27:05.399" starttime="20200416 08:27:05.323"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:05.399" starttime="20200416 08:27:05.284"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:05.399" starttime="20200416 08:27:04.355"></status>
+</kw>
+<kw name="Then I should be logged in the home screen" library="LoginSteps">
+<kw name="Validate Home Page" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Cart}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:06.225" starttime="20200416 08:27:05.401"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:06.226" starttime="20200416 08:27:05.401"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:06.226" starttime="20200416 08:27:05.400"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:27:06.298" starttime="20200416 08:27:06.227"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:06.298" starttime="20200416 08:27:06.227"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:27:06.299" critical="yes" starttime="20200416 08:26:56.949"></status>
+</test>
+<test id="s1-s3-t2" name="Scenario: Validate login with inexistent email">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:06.302" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:27:13.366" starttime="20200416 08:27:06.302"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:27:13.475" starttime="20200416 08:27:13.367"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:13.475" starttime="20200416 08:27:06.301"></status>
+</kw>
+<kw name="Given that I am on the page login" library="LoginSteps">
+<kw name="Verify the login page is loaded" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:13.512" starttime="20200416 08:27:13.476"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:13.512" starttime="20200416 08:27:13.476"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:13.512" starttime="20200416 08:27:13.475"></status>
+</kw>
+<kw name="When I input a non-existent email" library="LoginSteps">
+<kw name="Click Entrar button" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:13.514" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:27:13.655" starttime="20200416 08:27:13.513"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:13.656" starttime="20200416 08:27:13.513"></status>
+</kw>
+<kw name="Insert email inexistente" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:13.705" starttime="20200416 08:27:13.657"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${userNoexistent}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:13.706" level="INFO">Typing text 'invalid@google.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:27:14.100" starttime="20200416 08:27:13.706"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:14.100" starttime="20200416 08:27:13.656"></status>
+</kw>
+<kw name="Insert password" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:14.130" starttime="20200416 08:27:14.101"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:14.130" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:14.194" starttime="20200416 08:27:14.130"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:14.195" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:14.351" starttime="20200416 08:27:14.195"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:14.351" starttime="20200416 08:27:14.100"></status>
+</kw>
+<kw name="Click Entrar button second" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:14.384" starttime="20200416 08:27:14.351"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:14.384" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:27:14.472" starttime="20200416 08:27:14.384"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:14.473" starttime="20200416 08:27:14.351"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:14.473" starttime="20200416 08:27:13.512"></status>
+</kw>
+<kw name="Then an error message should be display" library="LoginSteps">
+<kw name="Validate message email" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Lbl_Error}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:15.437" starttime="20200416 08:27:14.475"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:15.437" starttime="20200416 08:27:14.474"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:15.437" starttime="20200416 08:27:14.473"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:27:15.497" starttime="20200416 08:27:15.438"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:15.497" starttime="20200416 08:27:15.438"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:27:15.497" critical="yes" starttime="20200416 08:27:06.300"></status>
+</test>
+<test id="s1-s3-t3" name="Scenario: Validate login with incorrect password">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:15.500" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:27:21.166" starttime="20200416 08:27:15.499"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:27:21.277" starttime="20200416 08:27:21.166"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:21.277" starttime="20200416 08:27:15.498"></status>
+</kw>
+<kw name="Given that I am on the page login" library="LoginSteps">
+<kw name="Verify the login page is loaded" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:21.320" starttime="20200416 08:27:21.278"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:21.321" starttime="20200416 08:27:21.278"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:21.321" starttime="20200416 08:27:21.277"></status>
+</kw>
+<kw name="When I input an incorrect password" library="LoginSteps">
+<kw name="Click Entrar button" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:21.323" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:27:21.434" starttime="20200416 08:27:21.322"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:21.434" starttime="20200416 08:27:21.322"></status>
+</kw>
+<kw name="Insert email" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:21.480" starttime="20200416 08:27:21.438"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:21.481" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:27:21.996" starttime="20200416 08:27:21.480"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:21.996" starttime="20200416 08:27:21.436"></status>
+</kw>
+<kw name="Incorrect password" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:22.028" starttime="20200416 08:27:21.997"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:22.029" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:22.101" starttime="20200416 08:27:22.028"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${passwordIncorrect}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:22.103" level="INFO">Typing text '234561' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:22.266" starttime="20200416 08:27:22.102"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:22.267" starttime="20200416 08:27:21.996"></status>
+</kw>
+<kw name="Click Entrar button second" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:22.301" starttime="20200416 08:27:22.268"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:22.302" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:27:22.393" starttime="20200416 08:27:22.302"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:22.394" starttime="20200416 08:27:22.267"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:22.394" starttime="20200416 08:27:21.321"></status>
+</kw>
+<kw name="Then an error message should be display" library="LoginSteps">
+<kw name="Validate message email" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Lbl_Error}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:23.144" starttime="20200416 08:27:22.395"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:23.144" starttime="20200416 08:27:22.394"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:23.144" starttime="20200416 08:27:22.394"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:27:23.201" starttime="20200416 08:27:23.145"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:23.202" starttime="20200416 08:27:23.144"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:27:23.202" critical="yes" starttime="20200416 08:27:15.498"></status>
+</test>
+<test id="s1-s3-t4" name="Scenario: Validate login with empty email">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:23.204" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:27:29.752" starttime="20200416 08:27:23.203"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:27:29.862" starttime="20200416 08:27:29.753"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:29.863" starttime="20200416 08:27:23.203"></status>
+</kw>
+<kw name="Given that I am on the page login" library="LoginSteps">
+<kw name="Verify the login page is loaded" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:29.970" starttime="20200416 08:27:29.866"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:29.970" starttime="20200416 08:27:29.866"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:29.970" starttime="20200416 08:27:29.865"></status>
+</kw>
+<kw name="When I input with email empty" library="LoginSteps">
+<kw name="Click Entrar button" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:29.971" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:27:30.108" starttime="20200416 08:27:29.971"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:30.109" starttime="20200416 08:27:29.971"></status>
+</kw>
+<kw name="Insert email empty" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:30.153" starttime="20200416 08:27:30.112"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${userEmpty}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:30.153" level="INFO">Typing text '' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:27:30.256" starttime="20200416 08:27:30.153"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:30.256" starttime="20200416 08:27:30.110"></status>
+</kw>
+<kw name="Insert password" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:30.300" starttime="20200416 08:27:30.257"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:30.301" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:30.399" starttime="20200416 08:27:30.301"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:30.400" level="INFO">Typing text '654321' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:30.558" starttime="20200416 08:27:30.400"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:30.558" starttime="20200416 08:27:30.256"></status>
+</kw>
+<kw name="Click Entrar button second" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:30.598" starttime="20200416 08:27:30.559"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:30.600" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:27:30.714" starttime="20200416 08:27:30.599"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:30.714" starttime="20200416 08:27:30.558"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:30.715" starttime="20200416 08:27:29.970"></status>
+</kw>
+<kw name="Then an error message should be display" library="LoginSteps">
+<kw name="Validate message email" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Lbl_Error}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:31.482" starttime="20200416 08:27:30.718"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:31.483" starttime="20200416 08:27:30.716"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:31.483" starttime="20200416 08:27:30.716"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:27:31.544" starttime="20200416 08:27:31.484"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:31.544" starttime="20200416 08:27:31.483"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:27:31.544" critical="yes" starttime="20200416 08:27:23.202"></status>
+</test>
+<test id="s1-s3-t5" name="Scenario: Validate login with empty password">
+<kw type="setup" name="Open Web browser" library="Hooks">
+<doc>This keyword takes 1-2 arguments, the second is default</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:31.546" level="INFO">Opening browser 'chrome' to base url 'https://b2blearningv2.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200416 08:27:37.769" starttime="20200416 08:27:31.546"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200416 08:27:37.879" starttime="20200416 08:27:37.770"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:37.879" starttime="20200416 08:27:31.545"></status>
+</kw>
+<kw name="Given that I am on the page login" library="LoginSteps">
+<kw name="Verify the login page is loaded" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:37.917" starttime="20200416 08:27:37.880"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:37.917" starttime="20200416 08:27:37.880"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:37.917" starttime="20200416 08:27:37.879"></status>
+</kw>
+<kw name="When I input with password empty" library="LoginSteps">
+<kw name="Click Entrar button" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_Entrar}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:37.919" level="INFO">Clicking element 'button-entrar-navbar'.</msg>
+<status status="PASS" endtime="20200416 08:27:38.050" starttime="20200416 08:27:37.918"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:38.052" starttime="20200416 08:27:37.918"></status>
+</kw>
+<kw name="Insert email" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:38.094" starttime="20200416 08:27:38.055"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:38.095" level="INFO">Typing text 'cicrano@interncommerce.com' into text field 'input-home-01'.</msg>
+<status status="PASS" endtime="20200416 08:27:38.597" starttime="20200416 08:27:38.094"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:38.597" starttime="20200416 08:27:38.053"></status>
+</kw>
+<kw name="Empty password" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:38.629" starttime="20200416 08:27:38.597"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:38.629" level="INFO">Clicking element 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:38.701" starttime="20200416 08:27:38.629"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Txt_passwordField}</arg>
+<arg>${passwordEmpty}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:38.701" level="INFO">Typing text '' into text field 'input-home-02'.</msg>
+<status status="PASS" endtime="20200416 08:27:38.766" starttime="20200416 08:27:38.701"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:38.766" starttime="20200416 08:27:38.597"></status>
+</kw>
+<kw name="Click Entrar button second" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:38.799" starttime="20200416 08:27:38.766"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Btn_EntrarSecond}</arg>
+</arguments>
+<msg timestamp="20200416 08:27:38.801" level="INFO">Clicking element 'button-entrar-drawer'.</msg>
+<status status="PASS" endtime="20200416 08:27:38.897" starttime="20200416 08:27:38.799"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:38.897" starttime="20200416 08:27:38.766"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:38.897" starttime="20200416 08:27:37.918"></status>
+</kw>
+<kw name="Then an error message should be display" library="LoginSteps">
+<kw name="Validate message email" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Lbl_Error}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200416 08:27:39.647" starttime="20200416 08:27:38.901"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:39.648" starttime="20200416 08:27:38.900"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:39.648" starttime="20200416 08:27:38.899"></status>
+</kw>
+<kw type="teardown" name="Close browser opened" library="Hooks">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200416 08:27:39.706" starttime="20200416 08:27:39.648"></status>
+</kw>
+<status status="PASS" endtime="20200416 08:27:39.706" starttime="20200416 08:27:39.648"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20200416 08:27:39.706" critical="yes" starttime="20200416 08:27:31.545"></status>
+</test>
+<doc>This is a basic login test</doc>
+<status status="PASS" endtime="20200416 08:27:39.708" starttime="20200416 08:26:56.925"></status>
+</suite>
+<status status="PASS" endtime="20200416 08:27:39.716" starttime="20200416 08:25:09.127"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="5" pass="0">Critical Tests</stat>
-<stat fail="5" pass="0">All Tests</stat>
+<stat fail="0" pass="16">Critical Tests</stat>
+<stat fail="0" pass="16">All Tests</stat>
 </total>
 <tag>
-<stat info="combined" fail="3" combined="NOT robot:exit" pass="0">NOT robot:exit</stat>
-<stat fail="5" pass="0">Home1</stat>
-<stat fail="2" pass="0">robot:exit</stat>
+<stat fail="0" pass="16">Regression</stat>
 </tag>
 <suite>
-<stat fail="5" id="s1" name="Features" pass="0">Features</stat>
-<stat fail="5" id="s1-s1" name="HomeSreen" pass="0">Features.HomeSreen</stat>
+<stat fail="0" id="s1" name="Features" pass="16">Features</stat>
+<stat fail="0" id="s1-s1" name="Cart" pass="6">Features.Cart</stat>
+<stat fail="0" id="s1-s2" name="HomeSreen" pass="5">Features.HomeSreen</stat>
+<stat fail="0" id="s1-s3" name="Login" pass="5">Features.Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20200406 12:28:43.038" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
-  (Session info: chrome=80.0.3987.87)
-</msg>
-<msg timestamp="20200406 12:28:50.186" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
-<msg timestamp="20200406 12:28:50.195" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbd869ebdd0&gt;: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/89c20aea08e2d54d11d507624341d3fd</msg>
-<msg timestamp="20200406 12:28:50.198" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbd869ef410&gt;: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/89c20aea08e2d54d11d507624341d3fd</msg>
-<msg timestamp="20200406 12:28:50.201" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbd869a47d0&gt;: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/89c20aea08e2d54d11d507624341d3fd</msg>
 </errors>
 </robot>

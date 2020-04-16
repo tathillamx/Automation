@@ -21,7 +21,7 @@ I click to increase the quantity
     HomePage.Click button increase
 
 I should see the quantity of products
-    HomePage.Validade Cart
+    HomePage.Click button cart
 
 I click to decrease the quantity
     HomePage.Click button increase
@@ -32,7 +32,7 @@ I click on the cart button
     HomePage.Click button cart
 
 I should see the cart page
-    HomePage.Validade Cart
+    HomePage.Validate Cart
 
 that I logged into the app the first time
     HomePage.Verify the login page is loaded
@@ -46,7 +46,7 @@ I didn't add products
 
 I should see total value to equal zero
     HomePage.Click button cart
-    HomePage.Validade Cart
+    HomePage.Validate Cart Empty
 
 I did add products before
     HomePage.Validate Home Page
@@ -63,4 +63,5 @@ I did add products before
 
 I should see the total value according to the quantity of the products that are already added
     HomePage.Click button cart
-    HomePage.Validade Cart
+    HomePage.Validate Cart
+
